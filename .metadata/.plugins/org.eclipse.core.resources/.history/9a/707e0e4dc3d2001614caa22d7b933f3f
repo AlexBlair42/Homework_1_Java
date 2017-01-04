@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.printf (" Please enter a number to be tested. \n");
+		IsEven();
+	}
+	
+	public static boolean IsEven(){
+		int y = 2;
+		Scanner input = new Scanner(System.in);
+		int x = input.nextInt();
+		
+		if (x % y == 0)
+		{
+			return true;
+		}
+		else{
+			return true;
+		}
+	}
+
+}

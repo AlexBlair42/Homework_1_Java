@@ -1,0 +1,25 @@
+import java.awt.*;
+import java.awt.Graphics;
+import java.awt.event.*;
+import javax.swing.JFrame;
+importjavax.swing.JLabel;
+
+public class HelloComponent 
+{
+public static void main(String[] args)
+{
+	JFrame frame = new JFrame("Hello");
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	HelloComponent_ label = new HelloComponent_();
+	frame.add(label);
+	frame.setSize(300, 300);
+	frame.setVisible(true);
+}
+}
+
+class HelloComponent_ extends javax.swing.JComponent
+{
+	public void paintComponent(Graphics g){
+		g.drawString("Hello World",125,95);
+	}
+}
