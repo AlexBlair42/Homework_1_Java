@@ -1,24 +1,25 @@
 
 public class Date {
 	
-	 int month;
-	 int year;
-	 int day;
+	static int month;
+	static int year;
+	static int day;
+	
 	
 	void SetMonth(int month){this.month = month;}
-	int GetMonth(){return month;}
+	static int GetMonth(){return month;}
 	
 	void SetYear(int year){this.year = year;}
-	int GetYear(){return year;}
+	static int GetYear(){return year;}
 	
 	void SetDay(int day){this.day = day;}
-	int GetDay(){return day;}
+	static int GetDay(){return day;}
 	
 	public Date ()
 	{
-		month = 2;
-		day = 15;
-		year = 2016;
+		month = 1;
+		day = 1;
+		year = 1;
 	}
 	
 	public Date(int m, int d, int y)
@@ -28,7 +29,7 @@ public class Date {
 		y = year;
 	}
 	
-	String displayDate() 
+	String displayDate() // I am not totally sure how to get this method to work
 	{
 		String date = month + "/" + day + "/" + year;
 		return date;

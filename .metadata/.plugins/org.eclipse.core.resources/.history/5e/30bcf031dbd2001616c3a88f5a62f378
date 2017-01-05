@@ -1,0 +1,38 @@
+
+public class Date {
+	
+	static int month;
+	static int year;
+	static int day;
+	
+	
+	void SetMonth(int month){this.month = month;}
+	static int GetMonth(){return month;}
+	
+	void SetYear(int year){this.year = year;}
+	static int GetYear(){return year;}
+	
+	void SetDay(int day){this.day = day;}
+	static int GetDay(){return day;}
+	
+	public Date ()
+	{
+		month = 1;
+		day = 1;
+		year = 1;
+	}
+	
+	public Date(int m, int d, int y)
+	{
+		m = month;
+		d = day;
+		y = year;
+	}
+	
+	void displayDate() // I am not totally sure how to get this method to work
+	{
+		System.out.printf("%d / %d / %d", Date.GetMonth() , Date.GetDay(), Date.GetYear());
+		
+	}
+
+}
