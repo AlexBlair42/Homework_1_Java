@@ -1,0 +1,32 @@
+
+public class Date {
+	
+	int month;
+	int year;
+	int day;
+	
+	
+	void SetMonth(){this.month = month;}
+	int GetMonth(int month){return month;}
+	
+	void SetYear(){this.year = year;}
+	int GetYear(int year){return year;}
+	
+	void SetDay(){this.day = day;}
+	int GetDay(int day){return day;}
+	
+	public Date ()
+	{
+		month = 1;
+		day = 1;
+		year = 1;
+	}
+	
+	public Date(int m, int d, int y)
+	{
+		m = month;
+		d = day;
+		y = year;
+	}
+
+}

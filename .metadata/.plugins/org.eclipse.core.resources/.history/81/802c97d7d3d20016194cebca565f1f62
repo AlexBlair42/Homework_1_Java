@@ -1,0 +1,18 @@
+
+public class Employee 
+{
+String Fname = null;
+String Lname = null;
+double Salary = 0;
+
+void SetFname(String Fname){this.Fname = Fname;}
+String GetFname(){return Fname;}
+
+String GetLname(){return Lname;}
+void SetLname(String Lname){this.Lname = Lname;}
+
+void SetSalary(double Salary){this.Salary = Salary;}
+double GetSalary(){return Salary;}
+
+public Employee(String Fname, String Lname, double Salary){Fname = Fname; Lname = Lname; Salary = Salary;}
+}

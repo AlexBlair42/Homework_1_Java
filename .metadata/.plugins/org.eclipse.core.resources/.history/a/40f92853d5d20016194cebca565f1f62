@@ -1,0 +1,12 @@
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		Employee Ralph = new Employee("Ralph","Lauren", 250000);
+		Employee Don = new Employee("Don", "Guiness", 300000);
+		System.out.printf("This is Ralph's Salary $ %f\n", Ralph.GetSalary());
+		System.out.printf("This is Don's Salary $ %f\n", Don.GetSalary());
+
+	}
+
+}

@@ -1,0 +1,17 @@
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		Employee Ralph = new Employee("Ralph","Lauren", 250000);
+		Employee Don = new Employee("Don", "Guiness", 300000);
+		System.out.printf("This is %s's Salary $%f\n", Ralph.GetFname(), Ralph.GetSalary());
+		System.out.printf("This is %s's Salary $%f\n", Don.GetFname(), Don.GetSalary());
+		double s = Ralph.GetSalary();
+		Ralph.SetSalary(s+= 250000*0.10);
+		System.out.printf("With a raise of 10% %s's Salary is $%f\n" , Ralph.GetFname(),s);
+		double p = Don.GetSalary();
+		Don.SetSalary(p += 3000000*0.10);
+		System.out.printf("With a raise of 10% %s's Salary is $%f\n" , Don.GetFname(), p);
+	}
+
+}

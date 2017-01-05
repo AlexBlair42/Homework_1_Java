@@ -1,0 +1,12 @@
+
+public class DateTest {
+
+	public static void main(String[] args) {
+		Date someDay = new Date(12,29,1995);
+		displayDate()
+		{
+			System.out.printf(%d "/" %d "/" %d, Date.GetMonth() , Date.GetDay(), Date.GetYear());
+		}
+	}
+
+}
